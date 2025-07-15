@@ -1,10 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
+:root{
+	--c-bg: #e9dac6;
+	--c-text: #4a1700;
+	--c-primary: #7b2d09;
+	--c-secondary: #d2691e;
+	--c-accent: #f4a460;
+	--c-highlight: #e3d7be;
+}
+
 html {
 	font-family: "Merriweather", serif;
 	font-optical-sizing: auto;
 
 	font-size: clamp(14px, 0.7vw + 10px, 40px);
+}
+
+body{
+	background-color: var(--c-bg);
+	color: var(--c-text);
 }
 
 .uk-h1,
@@ -34,10 +48,10 @@ main>section {
 	border: 1px dotted #000;
 	padding-block: 3rem;
 
-	background-color: #dad0c3;
+	background-color: var(--c-highlight);
 
 	&.bg-dark {
-		background-color: brown;
+		background-color: var(--c-primary);
 		color: #FFF;
 	}
 }
